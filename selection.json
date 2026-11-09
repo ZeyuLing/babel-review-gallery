@@ -1,7 +1,7 @@
 {
   "original_episodes": 1295,
-  "displayed_episodes": 1277,
-  "excluded_episodes": 18,
+  "displayed_episodes": 1272,
+  "excluded_episodes": 23,
   "criterion": "Exclude an episode if Ours has mean joint displacement >300 mm across adjacent stored frames near any action boundary. Applied post hoc to existing 15 Hz quantized display assets, not original benchmark arrays. This is a heuristic display filter, not a perceptual quality guarantee.",
   "excluded": [
     {
@@ -76,5 +76,96 @@
       "case_id": "val_9492",
       "max_boundary_step_mm": 616.9559812732234
     }
-  ]
+  ],
+  "floating_exclusions": [
+    {
+      "case_id": "val_7945",
+      "exclude": true,
+      "ours_tail_rise_m": 0.40300069456982895,
+      "gt_tail_rise_m": 0.0007797147996183862,
+      "max_ours_rise_m": 1.2400164069541253,
+      "longest_excess_seconds": 5.466666666666667,
+      "captions": [
+        "A person stands.",
+        "A person touches an object with their right hand.",
+        "A person interacts with an object using both hands.",
+        "A person interacts with an object using both hands and leans down.",
+        "A person moves up their upper body.",
+        "A person interacts with an object using both hands.",
+        "A person interacts with an object using both hands and leans down.",
+        "A person moves up their upper body, then steps backwards.",
+        "A person stands."
+      ]
+    },
+    {
+      "case_id": "val_12510",
+      "exclude": true,
+      "ours_tail_rise_m": 0.9318360163676295,
+      "gt_tail_rise_m": -0.007017095179625222,
+      "max_ours_rise_m": 1.1365108729001656,
+      "longest_excess_seconds": 1.6,
+      "captions": [
+        "A person climbs up stairs.",
+        "A person climbs down stairs backward.",
+        "A person climbs up stairs, then stands."
+      ]
+    },
+    {
+      "case_id": "val_10253",
+      "exclude": true,
+      "ours_tail_rise_m": 1.0050770344620046,
+      "gt_tail_rise_m": -0.03237023202478202,
+      "max_ours_rise_m": 1.1568544663602642,
+      "longest_excess_seconds": 1.1333333333333333,
+      "captions": [
+        "A person climbs up.",
+        "A person walks.",
+        "A person climbs down."
+      ]
+    },
+    {
+      "case_id": "val_4539",
+      "exclude": true,
+      "ours_tail_rise_m": 1.7217222724096934,
+      "gt_tail_rise_m": 0.5367307868409119,
+      "max_ours_rise_m": 1.996720140928619,
+      "longest_excess_seconds": 2.066666666666667,
+      "captions": [
+        "A person stands, then climbs up.",
+        "A person turns right, then climbs up.",
+        "A person turns left, then climbs down.",
+        "A person turns left, then walks.",
+        "A person turns left, then stands, then climbs up.",
+        "A person turns left, then climbs up.",
+        "A person climbs down.",
+        "A person turns right, then walks.",
+        "A person turns right, then stands, then walks.",
+        "A person turns right, then climbs up.",
+        "A person turns right, then stands, then climbs down.",
+        "A person turns left.",
+        "A person climbs up.",
+        "A person climbs down.",
+        "A person turns right, then climbs down.",
+        "A person turns right, then walks.",
+        "A person turns right, then stands.",
+        "A person climbs up."
+      ]
+    },
+    {
+      "case_id": "val_7420",
+      "exclude": true,
+      "ours_tail_rise_m": 0.6446917310098577,
+      "gt_tail_rise_m": -0.26080565230364927,
+      "max_ours_rise_m": 0.6675342381815488,
+      "longest_excess_seconds": 1.1333333333333333,
+      "captions": [
+        "A person looks to the left.",
+        "A person grabs an object with their right hand.",
+        "A person moves an item to the right, then shakes.",
+        "A person sets an item back in place.",
+        "A person climbs down."
+      ]
+    }
+  ],
+  "floating_criterion": "Post-hoc display heuristic: lower ankle/foot joint rises >0.4 m above initial level and >0.4 m above GT-relative rise for >=1 second while GT rise <0.25 m; final-window median rise and excess also >0.4 m. Quantized 15 Hz display assets, not original benchmark metric arrays."
 }
