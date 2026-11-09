@@ -1,0 +1,80 @@
+{
+  "original_episodes": 1295,
+  "displayed_episodes": 1277,
+  "excluded_episodes": 18,
+  "criterion": "Exclude an episode if Ours has mean joint displacement >300 mm across adjacent stored frames near any action boundary. Applied post hoc to existing 15 Hz quantized display assets, not original benchmark arrays. This is a heuristic display filter, not a perceptual quality guarantee.",
+  "excluded": [
+    {
+      "case_id": "val_10780",
+      "max_boundary_step_mm": 539.6096661561156
+    },
+    {
+      "case_id": "val_1099",
+      "max_boundary_step_mm": 394.7153326596818
+    },
+    {
+      "case_id": "val_11756",
+      "max_boundary_step_mm": 462.4462270672192
+    },
+    {
+      "case_id": "val_11793",
+      "max_boundary_step_mm": 353.0683818685812
+    },
+    {
+      "case_id": "val_1365",
+      "max_boundary_step_mm": 308.98496702233064
+    },
+    {
+      "case_id": "val_2592",
+      "max_boundary_step_mm": 370.3964761327629
+    },
+    {
+      "case_id": "val_3252",
+      "max_boundary_step_mm": 339.2707638158735
+    },
+    {
+      "case_id": "val_4307",
+      "max_boundary_step_mm": 320.1000132213336
+    },
+    {
+      "case_id": "val_4732",
+      "max_boundary_step_mm": 399.79322179573677
+    },
+    {
+      "case_id": "val_4906",
+      "max_boundary_step_mm": 363.6740801359249
+    },
+    {
+      "case_id": "val_5488",
+      "max_boundary_step_mm": 348.0880682803506
+    },
+    {
+      "case_id": "val_5997",
+      "max_boundary_step_mm": 344.14825983402346
+    },
+    {
+      "case_id": "val_6252",
+      "max_boundary_step_mm": 342.8467101461182
+    },
+    {
+      "case_id": "val_6339",
+      "max_boundary_step_mm": 594.9814494182598
+    },
+    {
+      "case_id": "val_6537",
+      "max_boundary_step_mm": 353.4052661240685
+    },
+    {
+      "case_id": "val_7433",
+      "max_boundary_step_mm": 304.71331509497816
+    },
+    {
+      "case_id": "val_8758",
+      "max_boundary_step_mm": 1044.8422246652458
+    },
+    {
+      "case_id": "val_9492",
+      "max_boundary_step_mm": 616.9559812732234
+    }
+  ]
+}
